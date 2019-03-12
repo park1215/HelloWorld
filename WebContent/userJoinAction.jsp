@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="user.UserDTO"%>
 <%@ page import="user.UserDAO"%>
 <%@ page import="java.io.PrintWriter"%>
@@ -30,7 +30,7 @@ int result = userDAO.join(userID, userPassword);
 
 if(result == 1){
 	PrintWriter script = response.getWriter();
-	script.println("<scritp>");
+	script.println("<script>");
 	script.println("alert('successfully joined.');");
 	script.println("location.href = 'index.jsp';");
 	script.println("</script>");
